@@ -1,0 +1,268 @@
+:root{
+    --color-pri-color: #777777;
+    --color-info1: #b4ac9e;
+    --color-info2: #626262;
+    --color-grey: #f0f0f0;
+    --color-dark: #000000;
+    --color-white: #ffffff;
+
+}
+
+
+
+
+
+
+/* -------------------------------------header-section-CSS---------------------------------------------- */
+
+.header{
+    padding: 7rem 0;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-pri-color);
+    text-transform: uppercase;
+    padding: 0 6rem;
+    height: 5.16rem;
+    line-height: 5.16rem;
+}
+
+.navbar-default .navbar-nav>li>a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.navbar-default .navbar-nav>li>a:hover:before{
+    width: 100%;
+    color: var(--color-grey);
+    background-color: var(--color-info2);
+}
+
+
+/* ----------------------------gatewayInfo-section-CSS--------------------------------------------------- */
+
+.gatewayInfo{
+    padding: 9rem 0;
+}
+
+/* .heading{
+    width: 88.5rem;
+} */
+
+
+.gatewayInfo .pri-heading{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-info1);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+
+.gatewayInfo .sec-heading{
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--colr-info2);
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+.gatewayInfo .para1{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--colr-info2);
+    margin-bottom: 5rem;
+}
+.gatewayInfo .para2{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #d5d1c8;
+    margin-bottom: 0;
+}
+
+/* ----------------------------thumbNail-section-CSS--------------------------------------------------- */
+
+.thumbNail{
+    padding: 4rem 0 0 0;
+}
+
+.thumbInfo img{
+    margin-bottom: 3rem;
+}
+
+.thumbInfo .pri-heading{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-info1);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.thumbInfo .sec-heading{
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-info2);
+    margin-bottom: 4rem;
+}
+.thumbInfo .para1{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-info2);
+    margin-bottom: 13rem;  
+}
+
+/* ------------------------------emailForm-section-CSS--------------------------------------------------- */
+
+.emailForm{
+    padding: 7rem 0;
+    background-color: var(--color-grey);
+}
+
+.emailForm .pri-heading{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 8rem;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: var(--color-grey);
+}
+
+.signForm{
+    width: 35rem;
+    padding-bottom: 1.5rem;
+}
+
+.signForm::placeholder{
+    
+    background-color: var(--color-grey);
+}
+
+.signUpForm{
+    position: relative;
+}
+
+.signUpForm i{
+    position: relative;
+    right: 2rem;
+}
+
+/* -------------------------------lastThumbnail-section-CSS-------------------------------------------- */
+
+.lastThumbnail{
+    padding: 10rem 3rem 0 0;
+}
+
+.lastThumbnail .para1{
+    margin-bottom: 9rem;
+}
+
+
+.lastThumbnail .loadBtn button{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-info2);
+    padding: 2rem 3.5rem;
+    margin-bottom: 7rem;
+    transition: all .5s ease-in-out;
+}
+
+.lastThumbnail .loadBtn button:hover{
+    background-color: var(--color-info2);
+    color: var(--color-grey);
+}
+
+
+
+
+
+/* ----------------------------------footer-section-CSS------------------------------------------------ */
+
+.footer{
+    padding: 4rem 0;
+    background-color: var(--color-grey);
+}
+
+.footer a{
+    color: var(--color-dark);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------End-------------------------------------------------- */
+
+@media all and (max-width: 768px){
+    .header {
+        padding: 2rem 0;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 0;
+    }
+    .gatewayInfo .sec-heading{
+        font-size: 2.5rem;
+    }
+    .gatewayInfo .para1{
+        margin-bottom: 3rem;
+    }
+    .gatewayInfo {
+        padding: 3rem 0;
+    }
+    .thumbInfo .para1 {
+        margin-bottom: 4rem;
+    }
+    .signForm {
+        width: 100%;
+    }
+    .emailForm {
+        padding: 2rem 0;
+    }
+    .emailForm .pri-heading {
+        font-size: 2.9rem;
+        margin-bottom: 3rem;
+    }
+    .signUpForm i {
+        left: 16rem;
+        bottom: 3.6rem;
+    }
+    .lastThumbnail {
+        padding: 2rem 0;
+    }
+    .thumbInfo .sec-heading {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .lastThumbnail .loadBtn button {
+        margin-bottom: 2rem;
+    }
+    .lastThumbnail .loadBtn button {
+        width: 95%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
